@@ -6,9 +6,19 @@ body {
     background-color: #f0f0f0;
 }
 
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #090;
+    padding: 10px;    
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+}
+
 .container {
-    width: 100%;
-    max-width: 200px;
+    width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 5px;
@@ -18,3 +28,33 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+.expression {
+    font-size: 12px;
+    width: 450px;
+    padding: 10px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 2px;
+}
+
+.legends {
+    font-size: 9px;
+    font-style: italic;
+    color: #666;
+    border-top: 1px solid #ccc;
+    margin: 2px;
+    padding: 2px;
+}
+
+.legend-item{
+    font-size: 9px;
+    color: #666;
+    padding: 2px;
+    margin: 2px;
+}
+

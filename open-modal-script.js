@@ -27,6 +27,10 @@ function showModal(selectionText) {
     input.type = "text";
     input.value = selectionText;
     input.style.marginRight = "10px";
+    input.style.padding = "5px";
+    input.style.border = "1px solid #ccc";
+    input.style.borderRadius = "5px";
+    input.style.width = "450px";
 
     var equalsButton = document.createElement("button");
     equalsButton.textContent = "=";

@@ -5,6 +5,8 @@ $(function(){
 
     $('#btnCalculate').click(function(){
         const expr = $('#expression').val();
-        $('#result').text(math.evaluate(expr));
+        const result = math.evaluate(expr);
+        // format result with thousand separator
+        $('#result').text(result.toLocaleString());
     });
 });
