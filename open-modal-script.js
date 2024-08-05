@@ -26,11 +26,12 @@ function showModal(selectionText) {
     var input = document.createElement("input");
     input.type = "text";
     input.value = selectionText;
-    input.style.marginRight = "10px";
+    input.style.margin = "5px";
     input.style.padding = "5px";
     input.style.border = "1px solid #ccc";
     input.style.borderRadius = "5px";
     input.style.width = "450px";
+    input.style.fontSize = "12px";
 
     var equalsButton = document.createElement("button");
     equalsButton.textContent = "=";
@@ -39,20 +40,26 @@ function showModal(selectionText) {
     equalsButton.style.backgroundColor = "blue";
     equalsButton.style.color = "white";
     equalsButton.style.cursor = "pointer";
+    equalsButton.style.fontSize = "12px";
 
     equalsButton.addEventListener("click", function() {
         try {
             var expr = input.value;
             var result = math.evaluate(expr);
-            resultLabel.textContent = "Result = " + result;
+            resultLabel.textContent = result.toLocaleString();
         } catch (error) {
             console.error("An error occurred:", error);
         }
     });
 
     var resultLabel = document.createElement("p");
-    resultLabel.style.marginTop = "10px";
+    resultLabel.style.margin = "5px";
+    resultLabel.style.padding = "5px";
     resultLabel.style.fontWeight = "bold";
+    resultLabel.style.fontSize = "12px";
+    resultLabel.style.backgroundColor = "white";    
+    resultLabel.style.border = "1px solid #ccc";
+    resultLabel.style.borderRadius = "5px";
 
     modal.appendChild(closeButton);
     modal.appendChild(input);
